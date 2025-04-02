@@ -57,6 +57,7 @@ dt_sampler.run(num_samples, method="unigen", sample_seed=seed)
 And you check `example.ipynb` for a detailed understanding.
 
 ## Contact
-Tsuda Laboratory (https://www.tsudalab.org/)\
-Department of Computational Biology and Medical Science\
+Tsuda Laboratory (https://www.tsudalab.org/)
+
+Department of Computational Biology and Medical Science
 The University of Tokyo
