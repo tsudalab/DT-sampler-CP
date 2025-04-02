@@ -41,7 +41,17 @@ We recommend creating a virtual environment using conda or venv. The "requiremen
 has been provided to reproduce the environment. We tested our implementation using 
 Python 3.12.8.
 
--1 Create a virtual environment using Conda:
+1. Create a Conda Virtual Environment
+```bash
+conda create -n dtsampler python=3.11.3 -y
+conda activate dtsampler
+```
+
+2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Quick Start
 To encode a decision tree invoke the following function in `encode.py`.  
