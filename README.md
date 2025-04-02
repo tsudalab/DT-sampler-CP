@@ -36,10 +36,12 @@ The feature importance is defined as the contribution of each feature to a high 
 ④ Estimate the training accuracy distribution of the decision trees in the high accuracy space.\
 ⑤ Measure feature importance by calculating the emergence probability  of each feature.
 
-## Requirements
+## Environmental configuration
 We recommend creating a virtual environment using conda or venv. The "requirements.txt" file 
 has been provided to reproduce the environment. We tested our implementation using 
 Python 3.12.8.
+
+-1 Create a virtual environment using Conda:
 
 ## Quick Start
 To encode a decision tree invoke the following function in `encode.py`.  
@@ -49,6 +51,7 @@ get_solution(X_train, y_train, traget_nodes, true_n, export_path, is_leaf_sampli
 ```
 
 To train and generate sample decision trees execute the following code snippet.
+
 ```python
 dt_sampler = DT_sampler(X_train, y_train, node_n, threshold, cnf_path)
 dt_sampler.run(num_samples, method="unigen", sample_seed=seed)
