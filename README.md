@@ -43,7 +43,7 @@ Python 3.12.8.
 
 1. Create a Conda Virtual Environment
 ```bash
-conda create -n dtsampler python=3.11.3 -y
+conda create -n dtsampler python=3.12.8 -y
 conda activate dtsampler
 ```
 
