@@ -1,7 +1,6 @@
 # DT-Sampler
 
   
-
 ## Details
 You can find more details about DT-Sampler at [TBD]. The previous version of DT-Sampler (ICML2023 Workshop paper) can be found at [https://arxiv.org/abs/2307.13333](https://arxiv.org/abs/2307.13333) and its original codebase at [https://github.com/tsudalab/DT-sampler](https://github.com/tsudalab/DT-sampler).
 
@@ -43,24 +42,21 @@ has been provided to reproduce the environment. We tested our implementation usi
 Python 3.12.8.
 
 ## Quick Start
-To encode a decision tree invoke the following function in encode.py.  
+To encode a decision tree invoke the following function in `encode.py`.  
+
 ```python
 get_solution(X_train, y_train, traget_nodes, true_n, export_path, is_leaf_sampling=True)
 ```
+
 To train and generate sample decision trees execute the following code snippet.
 ```python
 dt_sampler = DT_sampler(X_train, y_train, node_n, threshold, cnf_path)
 dt_sampler.run(num_samples, method="unigen", sample_seed=seed)
 ```
 
-A simple example to generate feature importance score.
-```python
-python example.py
-```
-
-Please check `example.ipynb` for a detailed understanding.
+And you check `example.ipynb` for a detailed understanding.
 
 ## Contact
-Tsuda Laboratory (https://www.tsudalab.org/)\
-Department of Computational Biology and Medical Science\
+Tsuda Laboratory (https://www.tsudalab.org/)\n
+Department of Computational Biology and Medical Science\n
 The University of Tokyo
